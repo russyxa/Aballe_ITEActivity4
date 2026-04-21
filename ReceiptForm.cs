@@ -22,6 +22,10 @@ namespace Aballe_ITEActivity4 // <-- Make sure this matches your project's actua
             _transactionId = transactionId;
             _cashierName = cashierName;
 
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.Height = Screen.PrimaryScreen.WorkingArea.Height; // Stretches to full screen height
+            this.FormBorderStyle = FormBorderStyle.FixedDialog; // Prevents manual resizing
+
             viewer = new ReportViewer();
             viewer.Dock = DockStyle.Fill;
             this.Controls.Add(viewer);
@@ -39,14 +43,15 @@ namespace Aballe_ITEActivity4 // <-- Make sure this matches your project's actua
                 new ReportParameter("prmTransactionId", _transactionId.ToString()),
                 new ReportParameter("prmDate", DateTime.Now.ToString("g")),
                 new ReportParameter("prmCashier", _cashierName),
-                new ReportParameter("prmTotal", _checkoutData.TotalAmount.ToString("F2"))
+                new ReportParameter("prmTotal", _checkoutData.TotalAmount.ToString("F2")),
+                new ReportParameter("prmTendered", _checkoutData.Tendered.ToString("F2")),
+                new ReportParameter("prmChange", _checkoutData.ChangeAmount.ToString("F2"))
             };
             viewer.LocalReport.SetParameters(parameters);
 
             ReportDataSource rds = new ReportDataSource("dsReceiptItems", _checkoutData.Items);
             viewer.LocalReport.DataSources.Clear();
             viewer.LocalReport.DataSources.Add(rds);
-
             viewer.RefreshReport();
         }
     }

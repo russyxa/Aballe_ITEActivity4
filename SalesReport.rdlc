@@ -9,7 +9,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>STARBUKO SALES REPORT</Value>
+                <Value>SALES REPORT</Value>
                 <Style>
                   <FontStyle>Normal</FontStyle>
                   <FontFamily>Times New Roman</FontFamily>
@@ -20,14 +20,16 @@
                 </Style>
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>0.94404cm</Top>
-        <Left>4.23665cm</Left>
+        <Top>0.62654cm</Top>
+        <Left>0.51597cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.78083cm</Width>
+        <Width>3.49483cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -64,7 +66,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>TransactionId</Value>
+                              <Value>Transaction Id</Value>
                               <Style>
                                 <FontStyle>Normal</FontStyle>
                                 <FontFamily>Courier New</FontFamily>
@@ -83,7 +85,7 @@
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
-                          <Style>Solid</Style>
+                          <Style>None</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -102,7 +104,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>TransactionDate</Value>
+                              <Value>Date/Time</Value>
                               <Style>
                                 <FontStyle>Normal</FontStyle>
                                 <FontFamily>Courier New</FontFamily>
@@ -121,7 +123,7 @@
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
-                          <Style>Solid</Style>
+                          <Style>None</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -140,7 +142,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>TotalAmount</Value>
+                              <Value>Total Amount</Value>
                               <Style>
                                 <FontStyle>Normal</FontStyle>
                                 <FontFamily>Courier New</FontFamily>
@@ -159,7 +161,7 @@
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
-                          <Style>Solid</Style>
+                          <Style>None</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -186,6 +188,7 @@
                               <Value>=Fields!TransactionId.Value</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
+                                <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -198,7 +201,7 @@
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
-                          <Style>Solid</Style>
+                          <Style>None</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -221,6 +224,7 @@
                               <Style>
                                 <FontStyle>Normal</FontStyle>
                                 <FontFamily>Courier New</FontFamily>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>Normal</FontWeight>
                                 <TextDecoration>None</TextDecoration>
                                 <Color>#000000</Color>
@@ -236,7 +240,7 @@
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
-                          <Style>Solid</Style>
+                          <Style>None</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -258,6 +262,7 @@
                               <Value>=Fields!TotalAmount.Value</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
+                                <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -270,7 +275,7 @@
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
-                          <Style>Solid</Style>
+                          <Style>None</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -294,11 +299,12 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>GRAND TOTAL:</Value>
+                              <Value>GRAND TOTAL (TALLY):</Value>
                               <Style>
                                 <FontStyle>Normal</FontStyle>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontWeight>Normal</FontWeight>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
                                 <TextDecoration>None</TextDecoration>
                                 <Color>#000000</Color>
                               </Style>
@@ -313,7 +319,7 @@
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
-                          <Style>Solid</Style>
+                          <Style>None</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -337,17 +343,20 @@
                               <Value>=Sum(Fields!TotalAmount.Value)</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox10</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
-                          <Style>Solid</Style>
+                          <Style>None</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -382,8 +391,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>dsTransactions</DataSetName>
-        <Top>1.9177cm</Top>
-        <Left>1.01931cm</Left>
+        <Top>3.8227cm</Top>
+        <Left>0.51597cm</Left>
         <Height>1.8cm</Height>
         <Width>12.87633cm</Width>
         <ZIndex>1</ZIndex>
@@ -393,11 +402,124 @@
           </Border>
         </Style>
       </Tablix>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Starbuko Coffee</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>1.47348cm</Top>
+        <Left>0.51597cm</Left>
+        <Height>0.47977cm</Height>
+        <Width>4.80716cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox5">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>123 Starbuko Global Township, Davao City</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox5</rd:DefaultName>
+        <Top>1.81215cm</Top>
+        <Left>0.51597cm</Left>
+        <Height>0.82578cm</Height>
+        <Width>4.80716cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox7">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>www.starbukocoffee.com</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>starbukocoffee@gmail.com</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox7</rd:DefaultName>
+        <Top>2.74376cm</Top>
+        <Left>0.51597cm</Left>
+        <Height>0.832cm</Height>
+        <Width>4.80716cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>3.01667in</Height>
+    <Height>2.85834in</Height>
     <Style />
   </Body>
-  <Width>5.69167in</Width>
+  <Width>5.51667in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

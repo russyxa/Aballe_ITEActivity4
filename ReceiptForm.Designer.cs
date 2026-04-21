@@ -34,7 +34,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(681, 545);
+            ClientSize = new Size(681, 602);
             Name = "ReceiptForm";
             Text = "Starbuko Receipt";
             ResumeLayout(false);

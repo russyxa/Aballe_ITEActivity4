@@ -34,7 +34,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(665, 492);
+            ClientSize = new Size(695, 492);
             Name = "SalesReportForm";
             Text = "Starbuko SalesReport";
             Load += SalesReportForm_Load;

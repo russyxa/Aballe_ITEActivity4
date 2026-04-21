@@ -113,23 +113,25 @@
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel2.Controls.Add(lblWelcome);
-            panel2.Location = new Point(1072, 3);
+            panel2.Location = new Point(862, 15);
             panel2.Name = "panel2";
             panel2.RightToLeft = RightToLeft.No;
-            panel2.Size = new Size(416, 64);
+            panel2.Size = new Size(619, 52);
             panel2.TabIndex = 7;
             // 
             // lblWelcome
             // 
             lblWelcome.AutoSize = true;
+            lblWelcome.Dock = DockStyle.Right;
             lblWelcome.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblWelcome.ForeColor = Color.White;
-            lblWelcome.Location = new Point(11, 7);
+            lblWelcome.Location = new Point(355, 0);
             lblWelcome.Name = "lblWelcome";
             lblWelcome.RightToLeft = RightToLeft.No;
             lblWelcome.Size = new Size(264, 46);
             lblWelcome.TabIndex = 2;
             lblWelcome.Text = "Welcome, user!";
+            lblWelcome.TextAlign = ContentAlignment.TopRight;
             lblWelcome.Click += lblWelcome_Click;
             // 
             // panel1

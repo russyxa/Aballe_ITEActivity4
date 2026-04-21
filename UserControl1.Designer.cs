@@ -56,7 +56,7 @@
             lblProductName.Location = new Point(207, 19);
             lblProductName.Name = "lblProductName";
             lblProductName.RightToLeft = RightToLeft.Yes;
-            lblProductName.Size = new Size(292, 127);
+            lblProductName.Size = new Size(201, 127);
             lblProductName.TabIndex = 2;
             lblProductName.Text = "Product Name";
             lblProductName.TextAlign = ContentAlignment.TopRight;
@@ -68,10 +68,10 @@
             lblPrice.AutoSize = true;
             lblPrice.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblPrice.ForeColor = Color.White;
-            lblPrice.Location = new Point(443, 169);
+            lblPrice.Location = new Point(352, 169);
             lblPrice.Name = "lblPrice";
             lblPrice.RightToLeft = RightToLeft.Yes;
-            lblPrice.Size = new Size(56, 25);
+            lblPrice.Size = new Size(67, 31);
             lblPrice.TabIndex = 3;
             lblPrice.Text = "Price";
             lblPrice.TextAlign = ContentAlignment.MiddleRight;
@@ -79,27 +79,34 @@
             // 
             // btnEdit
             // 
-            btnEdit.Location = new Point(172, 185);
+            btnEdit.BackColor = Color.White;
+            btnEdit.FlatStyle = FlatStyle.Flat;
+            btnEdit.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEdit.ForeColor = SystemColors.ControlText;
+            btnEdit.Location = new Point(169, 172);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(75, 30);
             btnEdit.TabIndex = 4;
             btnEdit.Text = "Edit";
-            btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.UseVisualStyleBackColor = false;
             btnEdit.Click += btnEdit_Click;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(253, 185);
+            btnDelete.BackColor = Color.White;
+            btnDelete.FlatStyle = FlatStyle.Flat;
+            btnDelete.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDelete.Location = new Point(250, 172);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(75, 30);
             btnDelete.TabIndex = 5;
             btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
             // 
             // UserControl1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(3, 53, 44);
             BorderStyle = BorderStyle.FixedSingle;
@@ -112,7 +119,7 @@
             Font = new Font("Segoe UI", 11F);
             Margin = new Padding(3, 4, 3, 4);
             Name = "UserControl1";
-            Size = new Size(536, 223);
+            Size = new Size(445, 223);
             Click += OnProductClick;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

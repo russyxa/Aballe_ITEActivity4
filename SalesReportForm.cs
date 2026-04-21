@@ -17,6 +17,10 @@ namespace Aballe_ITEActivity4 // <-- Keep your original namespace
         {
             InitializeComponent(); // <-- Keep this!
 
+            this.Height = Screen.PrimaryScreen.WorkingArea.Height; // Stretches to full screen height
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormBorderStyle = FormBorderStyle.FixedDialog; // Prevents manual resizing
+
             viewer = new ReportViewer();
             viewer.Dock = DockStyle.Fill;
             this.Controls.Add(viewer);
