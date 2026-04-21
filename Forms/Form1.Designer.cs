@@ -354,6 +354,7 @@
             dgvOrder.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvOrder.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvOrder.BackgroundColor = Color.FromArgb(3, 53, 44);
+            dgvOrder.BorderStyle = BorderStyle.None;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = Color.White;
             dataGridViewCellStyle1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
